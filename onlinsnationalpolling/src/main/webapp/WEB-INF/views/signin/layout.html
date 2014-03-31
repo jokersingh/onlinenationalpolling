@@ -1,8 +1,18 @@
 <div>
+<form data-ng-controller="SignInController" data-ng-submit="submit()">
 <table>
 <tr>
 <th>User Name</th>
-<td><input type="text" id="userName" name="userName" ng-model="userName" required min="1">
+<td><input type="text" id="userName" name="userName" data-ng-model="user.userName" required min="1">
+</tr>
+<tr>
+<th>User Name</th>
+<td><input type="password" id="password" name="password" data-ng-model="user.password" required min="1">
+</tr>
+<tr>
+<td><button type="submit" id="submit" value="submit"></button></td>
 </tr>
 </table>
+<pre>list={{list}}</pre>
+</form>
 </div>
